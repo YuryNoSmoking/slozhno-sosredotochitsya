@@ -5,17 +5,32 @@
   background-color: var(--bkg-color);
   font-family: "IBM Plex mono", sans-serif;
   font-size: 18px;
-  padding: 0 10px;
+ 
   max-width: 375px;
-}
-.header {
   background-image: url("/images/cover-image-dark.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+}
+/* ************************   HEADER   ********************* */
+
+.header {
   outline: 1px dotted white;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, minmax(100px, 200px));
+  block-size: 100vh;
+  position: relative;
+
 }
 
 .header::before {
-  content: "-";
+  content: "";
   position: absolute;
+  inset-inline-end: 10px;
+  inset-block-start: 10px;
   display: block;
   inline-size: 25px;
   block-size: 25px;
@@ -23,37 +38,69 @@
   border-inline-end: 1px solid var(--accent-color);
 }
 
-.decor {
+.header::after {
+  content: "";
+  position: absolute;
+  inset-inline-end: 10px;
+  inset-block-start: 10px;
+  display: block;
+  inline-size: 25px;
+  block-size: 25px;
+  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--accent-color);
+}
+
+.header__rec {
+  position: absolute;
+  inset-inline-end: 36px;
+  inset-block-start: 14px;
   text-transform: uppercase;
   color: var(--accent-color);
-  margin-block-start: 10px;
-  display: flex;
 }
- /* .decor::after {
-  content: ".";
+
+.header__rec::after {
+  content: "";
   display: block;
-  inline-size: 25px;
-  block-size: 25px;
-  border-block-start: 1px solid var(--accent-color);
-  border-inline-end: 1px solid var(--accent-color);
- } */
+  width: 5px;
+  height: 5px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  box-shadow: 0px 0px 4px 4px var(--accent-color);
+  position: absolute;
+  inset-inline-end: -15px;
+  inset-block-start: 8px;
+}
+
+.header__theme-menu {
+  justify-self: end;
+  margin-inline-end: 10px;
+}
+
+/* ***********************    КНОПКИ     ************************ */
 
 .header__theme-menu-button {
-  background-color: transparent;
   color: var(--accent-color);
+  background-color: transparent;
+  border: none;
+  text-transform: lowercase;
 }
 
 .header__theme-menu-button:focus {
   display: none;
 }
 
-.header__theme-menu-button:focus-visible {
+.header__theme-menu-button_active {
   outline: 1px solid var(--accent-color);
+  pointer-events: none;
 }
+
+/* ******************************         ***************************** */
 
 .heading-type-1 {
   color: var(--header-footer);
+  text-shadow: 4px 4px var(--accent-color);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  align-self: center;
 }
 
 .heading-type-2 {
@@ -65,6 +112,7 @@
   background-color: var(--accent-color);
   color: var(--bkg-color);
   font-weight: 700;
+  margin: 10px 0;
 }
 
 .heading-type-4 {
