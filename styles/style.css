@@ -2,4 +2,75 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  background-color: var(--bkg-color);
+  font-family: "IBM Plex mono", sans-serif;
+  font-size: 18px;
+  padding: 0 10px;
+  max-width: 375px;
+}
+.header {
+  background-image: url("/images/cover-image-dark.png");
+  outline: 1px dotted white;
+}
+
+.header::before {
+  content: "-";
+  position: absolute;
+  display: block;
+  inline-size: 25px;
+  block-size: 25px;
+  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--accent-color);
+}
+
+.decor {
+  text-transform: uppercase;
+  color: var(--accent-color);
+  margin-block-start: 10px;
+  display: flex;
+}
+ /* .decor::after {
+  content: ".";
+  display: block;
+  inline-size: 25px;
+  block-size: 25px;
+  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--accent-color);
+ } */
+
+.header__theme-menu-button {
+  background-color: transparent;
+  color: var(--accent-color);
+}
+
+.header__theme-menu-button:focus {
+  display: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  outline: 1px solid var(--accent-color);
+}
+
+.heading-type-1 {
+  color: var(--header-footer);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+}
+
+.heading-type-2 {
+  color: var(--accent-color);
+}
+
+.heading-type-3,
+.heading-type-4 {
+  background-color: var(--accent-color);
+  color: var(--bkg-color);
+  font-weight: 700;
+}
+
+.heading-type-4 {
+  font-weight: 400;
+}
+
+.text {
+  color: var(--text-color);
 }
