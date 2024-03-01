@@ -5,7 +5,7 @@
   background-color: var(--bkg-color);
   font-family: "IBM Plex mono", sans-serif;
   font-size: 18px;
- 
+  padding: 0 10px;
   max-width: 375px;
   background-image: url("/images/cover-image-dark.png");
   background-repeat: no-repeat;
@@ -16,20 +16,19 @@
 /* ************************   HEADER   ********************* */
 
 .header {
-  outline: 1px dotted white;
+  /* outline: 1px dotted white; */
   display: grid;
   align-items: center;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, minmax(100px, 200px));
+  grid-template-rows: repeat(3, 1fr);
   block-size: 100vh;
   position: relative;
-
 }
 
 .header::before {
   content: "";
   position: absolute;
-  inset-inline-end: 10px;
+  inset-inline-end: 0px;
   inset-block-start: 10px;
   display: block;
   inline-size: 25px;
@@ -40,19 +39,19 @@
 
 .header::after {
   content: "";
+  inset-inline-start: 0px;
+  inset-block-end: 10px;
   position: absolute;
-  inset-inline-end: 10px;
-  inset-block-start: 10px;
   display: block;
   inline-size: 25px;
   block-size: 25px;
-  border-block-start: 1px solid var(--accent-color);
-  border-inline-end: 1px solid var(--accent-color);
+  border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--accent-color);
 }
 
 .header__rec {
   position: absolute;
-  inset-inline-end: 36px;
+  inset-inline-end: 30px;
   inset-block-start: 14px;
   text-transform: uppercase;
   color: var(--accent-color);
@@ -73,7 +72,12 @@
 
 .header__theme-menu {
   justify-self: end;
-  margin-inline-end: 10px;
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 /* ***********************    КНОПКИ     ************************ */
@@ -83,6 +87,7 @@
   background-color: transparent;
   border: none;
   text-transform: lowercase;
+  inline-size: 70px;
 }
 
 .header__theme-menu-button:focus {
@@ -101,10 +106,14 @@
   text-shadow: 4px 4px var(--accent-color);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   align-self: center;
+  line-height: 97px;
 }
 
 .heading-type-2 {
   color: var(--accent-color);
+  font-size: inherit;
+  font-weight: 700;
+  margin-block-start: 40px;
 }
 
 .heading-type-3,
@@ -112,7 +121,9 @@
   background-color: var(--accent-color);
   color: var(--bkg-color);
   font-weight: 700;
-  margin: 10px 0;
+  font-size: inherit;
+  margin: 15px 0;
+  font-weight: 700;
 }
 
 .heading-type-4 {
@@ -121,4 +132,46 @@
 
 .text {
   color: var(--text-color);
+}
+
+/* ************************   FOOTER   ********************* */
+
+.footer {
+  block-size: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.footer::before {
+  content: "";
+  position: absolute;
+  inset-inline-end: 0px;
+  inset-block-start: 10px;
+  display: block;
+  inline-size: 25px;
+  block-size: 25px;
+  border-block-start: 1px solid var(--accent-color);
+  border-inline-end: 1px solid var(--accent-color);
+}
+
+.footer::after {
+  content: "";
+  inset-inline-start: 0px;
+  inset-block-end: 10px;
+  position: absolute;
+  display: block;
+  inline-size: 25px;
+  block-size: 25px;
+  border-block-end: 1px solid var(--accent-color);
+  border-inline-start: 1px solid var(--accent-color);
+}
+
+
+.footer__heading {
+  font-size: 116px;
+  color: var(--header-footer);
+  text-shadow: 2px 2px 0 var(--accent-color);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }
