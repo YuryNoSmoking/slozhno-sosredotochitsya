@@ -12,6 +12,7 @@
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
+  outline: 1px dotted white;
 }
 /* ************************   HEADER   ********************* */
 
@@ -136,12 +137,15 @@
 /* ************************   IMAGES   ********************* */
 .how__images-block {
   display: grid;
+  gap: 10px;
 
 } 
 
 .how__images-block img {
-  object-fit: cover;
+  object-fit: contain;
   object-position: center;
+  width: 355px;
+  
 }
 
 
