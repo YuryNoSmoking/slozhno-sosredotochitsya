@@ -133,6 +133,17 @@
 .text {
   color: var(--text-color);
 }
+/* ************************   IMAGES   ********************* */
+.how__images-block {
+  display: grid;
+
+} 
+
+.how__images-block img {
+  object-fit: cover;
+  object-position: center;
+}
+
 
 /* ************************   FOOTER   ********************* */
 
