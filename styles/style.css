@@ -8,7 +8,7 @@
   padding: 0 10px;
   min-width: 375px;
   max-width: 1024px;
-  background-image: url("/images/cover-image-dark.png");
+  background-image: var(--bkg-image);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
@@ -27,7 +27,7 @@
   /* outline: 1px dotted white; */
 }
 
-.header::before {
+.decorated-zone::before {
   content: "";
   position: absolute;
   inset-inline-end: 0;
@@ -35,11 +35,11 @@
   display: block;
   inline-size: 25px;
   block-size: 25px;
-  border-block-start: 1px solid var(--accent-color);
-  border-inline-end: 1px solid var(--accent-color);
+  border-block-start: 1px solid var(--decore-color);
+  border-inline-end: 1px solid var(--decore-color);
 }
 
-.header::after {
+.decorated-zone::after {
   content: "";
   inset-inline-start: 0;
   inset-block-end: 10px;
@@ -47,8 +47,8 @@
   display: block;
   inline-size: 25px;
   block-size: 25px;
-  border-block-end: 1px solid var(--accent-color);
-  border-inline-start: 1px solid var(--accent-color);
+  border-block-end: 1px solid var(--decore-color);
+  border-inline-start: 1px solid var(--decore-color);
 }
 
 .header__rec {
@@ -84,7 +84,7 @@
 
 .header__h1 {
   color: var(--header-footer);
-  text-shadow: 4px 4px var(--accent-color);
+  text-shadow: 4px 4px var(--shadow-color);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   align-self: center;
   line-height: 97px;
@@ -92,7 +92,7 @@
 
 .header__text {
   background-color: var(--accent-color);
-  color: var(--bkg-color);
+  color: var(--header-color);
   font-weight: 700;
   font-size: inherit;
   margin: 15px 0;
@@ -102,11 +102,12 @@
 /* ***********************    BUTTON     ************************ */
 
 .header__theme-menu-button {
-  color: var(--accent-color);
+  color: var(--button-color);
   background-color: transparent;
   border: none;
   text-transform: lowercase;
   inline-size: 70px;
+  cursor: pointer;
 }
 
 .header__theme-menu-button:focus {
@@ -114,7 +115,7 @@
 }
 
 .header__theme-menu-button_active {
-  outline: 1px solid var(--accent-color);
+  outline: 1px solid var(--button-color);
   pointer-events: none;
 }
 
@@ -171,7 +172,7 @@ img {
 
 /* *********************    DECOR    ****************** */
 .h2 {
-  color: var(--accent-color);
+  color: var(--header-h2);
   font-size: inherit;
   font-weight: 700;
   width: 300px;
@@ -180,7 +181,7 @@ img {
 .h3,
 .h4 {
   background-color: var(--accent-color);
-  color: var(--bkg-color);
+  color: var(--header-color);
   font-weight: 700;
   font-size: inherit;
   margin: 20px 0 10px 0;
@@ -192,7 +193,7 @@ img {
 
 .text {
   color: var(--text-color);
-  line-height: 23px;
+  line-height: 25px;
 }
 
 .link {
@@ -221,34 +222,10 @@ img {
   position: relative;
 }
 
-.footer::before {
-  content: "";
-  position: absolute;
-  inset-inline-end: 0px;
-  inset-block-start: 10px;
-  display: block;
-  inline-size: 25px;
-  block-size: 25px;
-  border-block-start: 1px solid var(--accent-color);
-  border-inline-end: 1px solid var(--accent-color);
-}
-
-.footer::after {
-  content: "";
-  inset-inline-start: 0px;
-  inset-block-end: 10px;
-  position: absolute;
-  display: block;
-  inline-size: 25px;
-  block-size: 25px;
-  border-block-end: 1px solid var(--accent-color);
-  border-inline-start: 1px solid var(--accent-color);
-}
-
 .footer__heading {
   font-size: 116px;
   color: var(--header-footer);
-  text-shadow: 2px 2px 0 var(--accent-color);
+  text-shadow: 2px 2px 0 var(--shadow-color);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }
 
@@ -280,6 +257,7 @@ img {
   }
 
   .header__h1 {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     margin-inline-start: -20px;
   }
 
@@ -336,8 +314,6 @@ img {
   .how__first .h3 {
     margin-block-start: 0;
   }
-
-
 }
 
 /* ************************   588 - 1023   ********************* */
@@ -361,10 +337,6 @@ img {
   .h2 {
     width: 236px;
   }
-
- 
-
-
 }
 /* ************************   1024   ********************* */
 

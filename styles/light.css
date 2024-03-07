@@ -5,8 +5,21 @@
 */
 
 .page.theme_light {
-  /* сохраните этот селектор в приведённом виде.
+  --bkg-color: #fff1f7;
+  --bkg-image: url("/images/cover-image-light.png");
+  --text-color: #353430;
+  --header-footer: #ffc2e6;
+  --accent-color: #ff8dcb;
+  --shadow-color: #ff0070;
+  --decore-color: #353430;
+  --button-color: #353430;
+  --header-color: #353430;
+  --header-h2: #353430;
+   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+
+
 }
+ 
