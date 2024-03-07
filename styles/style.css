@@ -331,7 +331,7 @@ img {
 
 /* ************************   588 - 1023   ********************* */
 
-@media (588px <=width <= 1023px) {
+@media (588px <=width < 1024px) {
   .page {
     max-width: 768px;
   }
@@ -347,8 +347,12 @@ img {
     transition: 1s;
   }
 
-  .what__heading {
+  .h2 {
     width: 236px;
+  }
+
+  .why__first .h3 {
+    margin-block-start: 0;
   }
 }
 /* ************************   1024   ********************* */
