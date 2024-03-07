@@ -24,6 +24,7 @@
   grid-template-rows: 1fr 0.5fr 1fr;
   block-size: 100vh;
   position: relative;
+  outline: 1px dotted white;
 }
 
 .header::before {
@@ -144,10 +145,28 @@
 /* *********************    SECTION HOW    ****************** */
 
 .how {
+  margin-block-start: 40px;
   outline: 1px dotted white;
 }
 
 .how__heading {
+}
+
+/* *********************    SECTION IMAGES    ****************** */
+.images {
+  margin: 40px 0;
+  outline: 1px dotted white;
+}
+
+.how__images-block {
+  display: grid;
+  gap: 10px;
+}
+
+img {
+  display: block;
+  object-fit: contain;
+  width: 100%;
 }
 
 /* *********************    DECOR    ****************** */
@@ -164,8 +183,7 @@
   color: var(--bkg-color);
   font-weight: 700;
   font-size: inherit;
-  margin: 15px 0;
-  font-weight: 700;
+  margin: 20px 0 10px 0;
 }
 
 .h4 {
@@ -190,19 +208,6 @@
 
 .link:focus-visible {
   outline: 1px solid var(--text-color);
-}
-
-/* ************************   IMAGES   ********************* */
-
-.how__images-block {
-  display: grid;
-  gap: 10px;
-}
-
-img {
-  display: block;
-  object-fit: contain;
-  width: 100%;
 }
 
 /* ************************   FOOTER   ********************* */
