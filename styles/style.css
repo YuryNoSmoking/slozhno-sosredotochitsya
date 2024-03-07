@@ -351,9 +351,16 @@ img {
     width: 236px;
   }
 
-  .why__first .why__heading-article {
+  .why__first .h3 {
     margin-block-start: 0;
   }
+
+
+  .how__first .h3 {
+    margin-block-start: 0;
+  }
+
+
 }
 /* ************************   1024   ********************* */
 
