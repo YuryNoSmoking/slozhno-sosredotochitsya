@@ -13,7 +13,7 @@
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  outline: 1px dotted white;
+  /* outline: 1px dotted white; */
 }
 /* ************************   HEADER   ********************* */
 
@@ -24,7 +24,7 @@
   grid-template-rows: 1fr 0.5fr 1fr;
   block-size: 100vh;
   position: relative;
-  outline: 1px dotted white;
+  /* outline: 1px dotted white; */
 }
 
 .header::before {
@@ -121,7 +121,7 @@
 /* *********************    SECTION WHY     ****************** */
 .why {
   margin-block-start: 40px;
-  outline: 1px dotted white;
+  /* outline: 1px dotted white; */
 }
 
 .why__heading {
@@ -133,7 +133,7 @@
 /* *********************    SECTION WHAT     ****************** */
 .what {
   margin-block-start: 40px;
-  outline: 1px dotted white;
+  /* outline: 1px dotted white; */
 }
 
 .what__heading {
@@ -146,7 +146,7 @@
 
 .how {
   margin-block-start: 40px;
-  outline: 1px dotted white;
+  /* outline: 1px dotted white; */
 }
 
 .how__heading {
@@ -155,7 +155,7 @@
 /* *********************    SECTION IMAGES    ****************** */
 .images {
   margin: 40px 0;
-  outline: 1px dotted white;
+  /* outline: 1px dotted white; */
 }
 
 .how__images-block {
@@ -192,6 +192,7 @@ img {
 
 .text {
   color: var(--text-color);
+  line-height: 23px;
 }
 
 .link {
@@ -261,7 +262,7 @@ img {
   }
 
   .header {
-    outline: 1px dashed white;
+    /* outline: 1px dashed white; */
   }
 
   .header::before {
@@ -327,6 +328,16 @@ img {
   .street {
     grid-column: 2/4;
   }
+  .why__first .h3 {
+    margin-block-start: 0;
+  }
+
+
+  .how__first .h3 {
+    margin-block-start: 0;
+  }
+
+
 }
 
 /* ************************   588 - 1023   ********************* */
@@ -351,14 +362,7 @@ img {
     width: 236px;
   }
 
-  .why__first .h3 {
-    margin-block-start: 0;
-  }
-
-
-  .how__first .h3 {
-    margin-block-start: 0;
-  }
+ 
 
 
 }
