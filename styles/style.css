@@ -54,7 +54,7 @@
 .header__rec {
   position: absolute;
   inset-inline-end: 30px;
-  inset-block-start: 14px;
+  inset-block-start: 10px;
   text-transform: uppercase;
   color: var(--accent-color);
 }
@@ -68,8 +68,8 @@
   border-radius: 50%;
   box-shadow: 0px 0px 4px 4px var(--accent-color);
   position: absolute;
-  inset-inline-end: -15px;
-  inset-block-start: 8px;
+  inset-inline-end: -16px;
+  inset-block-start: 10px;
 }
 
 .header__theme-menu {
@@ -79,7 +79,7 @@
 .header__theme-menu-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
 }
 
 .header__h1 {
@@ -93,9 +93,8 @@
 .header__text {
   background-color: var(--accent-color);
   color: var(--header-color);
-  font-weight: 700;
   font-size: inherit;
-  margin: 15px 0;
+  margin-block-end: 10px;
   font-weight: 700;
 }
 
@@ -117,6 +116,7 @@
 .header__theme-menu-button_active {
   outline: 1px solid var(--button-color);
   pointer-events: none;
+  
 }
 
 /* *********************    SECTION WHY     ****************** */
