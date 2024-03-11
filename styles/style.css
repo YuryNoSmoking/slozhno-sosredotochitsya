@@ -118,8 +118,6 @@
   pointer-events: none;
 }
 
-
-
 /* *********************    SECTION WHY     ****************** */
 /* section {
   margin-block-start: 50px;
@@ -152,7 +150,6 @@
 .how__images-block {
   display: grid;
   gap: 10px;
-  
 }
 
 img {
@@ -168,17 +165,21 @@ img {
   /* width: 330px; */
 }
 
+.h3 {
+  margin: 21px 0 10px 0;
+}
+
 .h3,
 .h4 {
   background-color: var(--accent-color);
   color: var(--header-color);
   font-weight: 700;
   font-size: inherit;
-  margin: 21px 0 10px 0;
 }
 
 .h4 {
   font-weight: 400;
+  margin: 20px 0 10px 0;
 }
 
 .text {
@@ -291,7 +292,6 @@ img {
     grid-column: 1/1;
     grid-row: 2/4;
     object-fit: cover;
-    
   }
 
   .street {
