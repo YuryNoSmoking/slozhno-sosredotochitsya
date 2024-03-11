@@ -116,7 +116,6 @@
 .header__theme-menu-button_active {
   outline: 1px solid var(--button-color);
   pointer-events: none;
-  
 }
 
 /* *********************    SECTION WHY     ****************** */
@@ -166,7 +165,7 @@
 
 img {
   display: block;
-  object-fit: contain;
+
   width: 100%;
 }
 
@@ -193,7 +192,7 @@ img {
 
 .text {
   color: var(--text-color);
-  line-height: 24px;
+  line-height: 24.4px;
 }
 
 .link {
@@ -309,7 +308,6 @@ img {
   .why__first .h3 {
     margin-block-start: 0;
   }
-
 
   .how__first .h3 {
     margin-block-start: 0;
