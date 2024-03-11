@@ -124,37 +124,22 @@
   /* outline: 1px dotted white; */
 }
 
-.why__heading {
-}
-
-.why__heading-article {
-}
-
 /* *********************    SECTION WHAT     ****************** */
 .what {
   margin-block-start: 50px;
   /* outline: 1px dotted white; */
 }
 
-.what__heading {
-}
-
-.what__heading-article {
-}
-
 /* *********************    SECTION HOW    ****************** */
 
 .how {
-  margin-block-start: 40px;
+  margin-block-start: 50px;
   /* outline: 1px dotted white; */
-}
-
-.how__heading {
 }
 
 /* *********************    SECTION IMAGES    ****************** */
 .images {
-  margin: 40px 0;
+  margin: 50px 0;
   /* outline: 1px dotted white; */
 }
 
@@ -165,7 +150,6 @@
 
 img {
   display: block;
-
   width: 100%;
 }
 
