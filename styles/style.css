@@ -174,7 +174,7 @@ img {
   color: var(--header-h2);
   font-size: inherit;
   font-weight: 700;
-  width: 300px;
+  /* width: 330px; */
 }
 
 .h3,
