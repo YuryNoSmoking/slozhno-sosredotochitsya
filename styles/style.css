@@ -166,7 +166,7 @@ img {
 }
 
 .h3 {
-  margin: 21px 0 10px 0;
+  margin-block-start: 21px;
 }
 
 .h3,
@@ -179,7 +179,7 @@ img {
 
 .h4 {
   font-weight: 400;
-  margin: 20px 0 10px 0;
+  margin-block-start: 20px;
 }
 
 .text {
