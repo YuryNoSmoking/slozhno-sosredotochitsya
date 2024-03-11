@@ -121,37 +121,38 @@
 
 
 /* *********************    SECTION WHY     ****************** */
-section {
+/* section {
   margin-block-start: 50px;
-}
+} */
 
 .why {
-  /* margin-block-start: 50px; */
+  margin-block-start: 40px;
   /* outline: 1px dotted white; */
 }
 
 /* *********************    SECTION WHAT     ****************** */
 .what {
-  /* margin-block-start: 50px; */
+  margin-block-start: 50px;
   /* outline: 1px dotted white; */
 }
 
 /* *********************    SECTION HOW    ****************** */
 
 .how {
-  /* margin-block-start: 50px; */
+  margin-block-start: 50px;
   /* outline: 1px dotted white; */
 }
 
 /* *********************    SECTION IMAGES    ****************** */
 .images {
-  /* margin: 50px 0; */
+  margin: 50px 0;
   /* outline: 1px dotted white; */
 }
 
 .how__images-block {
   display: grid;
   gap: 10px;
+  
 }
 
 img {
@@ -290,6 +291,7 @@ img {
     grid-column: 1/1;
     grid-row: 2/4;
     object-fit: cover;
+    
   }
 
   .street {
