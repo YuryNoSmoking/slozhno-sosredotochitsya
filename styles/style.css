@@ -118,28 +118,34 @@
   pointer-events: none;
 }
 
+
+
 /* *********************    SECTION WHY     ****************** */
+section {
+  margin-block-start: 50px;
+}
+
 .why {
-  margin-block-start: 40px;
+  /* margin-block-start: 50px; */
   /* outline: 1px dotted white; */
 }
 
 /* *********************    SECTION WHAT     ****************** */
 .what {
-  margin-block-start: 50px;
+  /* margin-block-start: 50px; */
   /* outline: 1px dotted white; */
 }
 
 /* *********************    SECTION HOW    ****************** */
 
 .how {
-  margin-block-start: 50px;
+  /* margin-block-start: 50px; */
   /* outline: 1px dotted white; */
 }
 
 /* *********************    SECTION IMAGES    ****************** */
 .images {
-  margin: 50px 0;
+  /* margin: 50px 0; */
   /* outline: 1px dotted white; */
 }
 
