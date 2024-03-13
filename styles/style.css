@@ -251,6 +251,11 @@ img {
   .page {
     padding: 0px 20px;
   }
+
+.header__rec {
+  inset-block-start: 25px;
+}
+
   .header::before {
     inset-block-start: 20px;
   }
