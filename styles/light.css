@@ -20,10 +20,9 @@
     чем стили в медиазапросе предпочтений пользователя
   */
 
-
+  .header__rec {
+    display: none;
+  }
 
 }
 
-.header__rec {
-  display: none;
-}

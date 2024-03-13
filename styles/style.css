@@ -5,7 +5,7 @@
   background-color: var(--bkg-color);
   font-family: "IBM Plex mono", sans-serif;
   font-size: 18px;
-  padding: 0 10px;
+  padding: 10px 10px;
   min-width: 375px;
   max-width: 1024px;
   background-image: var(--bkg-image);
@@ -13,7 +13,6 @@
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
- 
 }
 /* ************************   HEADER   ********************* */
 
@@ -23,15 +22,15 @@
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 0.5fr 1fr;
   block-size: 100vh;
+  min-block-size: 668px;
   position: relative;
-
 }
 
 .decorated-zone::before {
   content: "";
   position: absolute;
   inset-inline-end: 0;
-  inset-block-start: 10px;
+  inset-block-start: 0px;
   display: block;
   inline-size: 25px;
   block-size: 25px;
@@ -41,8 +40,8 @@
 
 .decorated-zone::after {
   content: "";
-  inset-inline-start: 0;
-  inset-block-end: 10px;
+  /* inset-inline-start: 0; */
+  inset-block-end: 20px;
   position: absolute;
   display: block;
   inline-size: 25px;
@@ -54,7 +53,8 @@
 .header__rec {
   position: absolute;
   inset-inline-end: 30px;
-  inset-block-start: 10px;
+  inset-block-start: 5px;
+
   text-transform: uppercase;
   color: var(--accent-color);
 }
@@ -204,6 +204,7 @@ img {
 
 .footer {
   block-size: 100vh;
+  min-block-size: 668px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -223,23 +224,23 @@ img {
 
 @media (588px <= width) {
   .page {
-    padding: 20px 20px;
+   padding: 20px 20px;
   }
 
-
-
-  .header::before {
-    inset-block-start: 20px;
-    transition: 1s;
+  .decorated-zone::before {
+    /* inset-block-start: 20px; */
+  
   }
 
-  .header::after {
-    inset-block-end: 20px;
-    transition: 1s;
+  .decorated-zone::after {
+    inset-block-end: 40px;
+ 
   }
+  
   .header__rec {
-    inset-inline-end: 28px;
-    inset-block-start: 25px;
+    /* inset-inline-end: 28px; */
+    /* inset-block-start: 25px; */
+    /* line-height: 1.6; */
   }
 
   .header__h1 {
@@ -260,7 +261,7 @@ img {
   .how {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    /* grid-template-rows: repeat(auto-fit, 1fr); */
+  
   }
 
   .how__images-block {
@@ -308,6 +309,11 @@ img {
     max-width: 768px;
   }
 
+  .header {
+    block-size: 100vh;
+    min-block-size: 1024px;
+  }
+
   .header__text {
     width: 364px;
     justify-self: end;
@@ -320,10 +326,20 @@ img {
   .h2 {
     width: 236px;
   }
+
+  .footer {
+    block-size: 100vh;
+    min-block-size: 1024px;
+  }
 }
 /* ************************   1024   ********************* */
 
 @media (1024px <=width) {
+  .header {
+    block-size: 100vh;
+    min-block-size: 768px;
+  }
+
   .header__theme-menu-list {
     flex-direction: row;
     gap: 13px;
@@ -348,5 +364,10 @@ img {
   .what__heading {
     grid-column-start: 1;
     grid-column-end: 4;
+  }
+
+  .footer {
+    block-size: 100vh;
+    min-block-size: 768px;
   }
 }
