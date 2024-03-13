@@ -281,6 +281,10 @@ img {
     margin-block-start: 80px;
   }
 
+  .images {
+    margin-block-end: 60px;
+  }
+  
   .why__heading {
     grid-row-start: 1;
     grid-row-end: 3;
@@ -366,7 +370,7 @@ img {
   }
 
   .header__theme-menu-list {
-    flex-direction: row;
+    grid-template-columns: repeat(3, 1fr);
     gap: 13px;
   }
 
