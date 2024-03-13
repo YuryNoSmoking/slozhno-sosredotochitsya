@@ -20,7 +20,7 @@
   display: grid;
   align-items: center;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 0.5fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
   block-size: 100vh;
   min-block-size: 668px;
   position: relative;
