@@ -53,7 +53,7 @@
 .header__rec {
   position: absolute;
   inset-inline-end: 30px;
-  inset-block-start: 5px;
+  inset-block-start: 10px;
   text-transform: uppercase;
   color: var(--accent-color);
 }
@@ -139,7 +139,9 @@
 
 /* *********************    SECTION IMAGES    ****************** */
 .images {
-  margin: 50px 0;
+  
+  margin-block-start: 50px;
+  margin-block-end: 40px;
 }
 
 .how__images-block {
