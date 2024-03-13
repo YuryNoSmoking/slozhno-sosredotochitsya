@@ -30,7 +30,7 @@
   content: "";
   position: absolute;
   inset-inline-end: 0;
-  inset-block-start: 0;
+  inset-block-start: 10px;
   display: block;
   inline-size: 25px;
   block-size: 25px;
@@ -41,7 +41,7 @@
 .header::after {
   content: "";
   inset-inline-start: 0;
-  inset-block-end: 20px;
+  inset-block-end: 10px;
   position: absolute;
   display: block;
   inline-size: 25px;
@@ -81,7 +81,6 @@
   display: grid;
   gap: 13px;
   line-height: 1.3;
-
 }
 
 .header__h1 {
@@ -222,7 +221,7 @@ img {
   content: "";
   position: absolute;
   inset-inline-end: 0;
-  inset-block-start: 20px;
+  inset-block-start: 10px;
   display: block;
   inline-size: 25px;
   block-size: 25px;
@@ -233,7 +232,7 @@ img {
 .footer::after {
   content: "";
   inset-inline-start: 0;
-  inset-block-end: 0;
+  inset-block-end: 10px;
   position: absolute;
   display: block;
   inline-size: 25px;
@@ -248,15 +247,21 @@ img {
 
 @media (588px <= width) {
   .page {
-    padding: 20px 20px;
+    padding: 0px 20px;
   }
-
+  .header::before {
+    inset-block-start: 20px;
+  }
   .header::after {
-    inset-block-end: 40px;
+    inset-block-end: 20px;
   }
 
   .footer::before {
-    inset-block-start: 40px;
+    inset-block-start: 20px;
+  }
+
+  .footer::after {
+    inset-block-end: 20px;
   }
 
   .header__h1 {
@@ -332,10 +337,6 @@ img {
   .header__text {
     width: 364px;
     justify-self: end;
-  }
-
-  .header__theme-menu {
-    margin-inline-end: 15px;
   }
 
   .h2 {
