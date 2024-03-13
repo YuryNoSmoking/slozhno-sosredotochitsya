@@ -26,11 +26,11 @@
   position: relative;
 }
 
-.decorated-zone::before {
+.header::before {
   content: "";
   position: absolute;
   inset-inline-end: 0;
-  inset-block-start: 0px;
+  inset-block-start: 0;
   display: block;
   inline-size: 25px;
   block-size: 25px;
@@ -38,9 +38,9 @@
   border-inline-end: 1px solid var(--decore-color);
 }
 
-.decorated-zone::after {
+.header::after {
   content: "";
-  /* inset-inline-start: 0; */
+  inset-inline-start: 0;
   inset-block-end: 20px;
   position: absolute;
   display: block;
@@ -218,29 +218,45 @@ img {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
 }
 
+.footer::before {
+  content: "";
+  position: absolute;
+  inset-inline-end: 0;
+  inset-block-start: 20px;
+  display: block;
+  inline-size: 25px;
+  block-size: 25px;
+  border-block-start: 1px solid var(--decore-color);
+  border-inline-end: 1px solid var(--decore-color);
+}
+
+.footer::after {
+  content: "";
+  inset-inline-start: 0;
+  inset-block-end: 0;
+  position: absolute;
+  display: block;
+  inline-size: 25px;
+  block-size: 25px;
+  border-block-end: 1px solid var(--decore-color);
+  border-inline-start: 1px solid var(--decore-color);
+}
+
 /* ************************   MEDIA   ********************* */
 
 /* 768 and 1024  breakpoints */
 
 @media (588px <= width) {
   .page {
-   padding: 20px 20px;
+    padding: 20px 20px;
   }
 
-  .decorated-zone::before {
-    /* inset-block-start: 20px; */
-  
-  }
-
-  .decorated-zone::after {
+  .header::after {
     inset-block-end: 40px;
- 
   }
-  
-  .header__rec {
-    /* inset-inline-end: 28px; */
-    /* inset-block-start: 25px; */
-    /* line-height: 1.6; */
+
+  .footer::before {
+    inset-block-start: 40px;
   }
 
   .header__h1 {
@@ -261,7 +277,6 @@ img {
   .how {
     display: grid;
     grid-template-columns: 1fr 2fr;
-  
   }
 
   .how__images-block {
