@@ -139,7 +139,6 @@
 
 /* *********************    SECTION IMAGES    ****************** */
 .images {
-  
   margin-block-start: 50px;
   margin-block-end: 40px;
 }
@@ -252,9 +251,9 @@ img {
     padding: 0px 20px;
   }
 
-.header__rec {
-  inset-block-start: 25px;
-}
+  .header__rec {
+    inset-block-start: 25px;
+  }
 
   .header::before {
     inset-block-start: 20px;
@@ -279,6 +278,13 @@ img {
   .why {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    margin-block-start: 60px;
+  }
+
+  .what,
+  .how,
+  .images {
+    margin-block-start: 80px;
   }
 
   .why__heading {
