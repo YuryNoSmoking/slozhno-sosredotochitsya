@@ -294,6 +294,8 @@ img {
   .how__images-block {
     grid-template-columns: repeat(3, 1fr);
     align-items: stretch;
+    gap: 20px;
+    margin-block-start: 20px;
   }
 
   .sunset {
