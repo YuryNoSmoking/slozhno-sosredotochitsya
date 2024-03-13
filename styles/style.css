@@ -255,17 +255,11 @@ img {
     inset-block-start: 25px;
   }
 
-  .header::before {
-    inset-block-start: 20px;
-  }
-  .header::after {
-    inset-block-end: 20px;
-  }
-
+  .header::before,
   .footer::before {
     inset-block-start: 20px;
   }
-
+  .header::after,
   .footer::after {
     inset-block-end: 20px;
   }
@@ -339,7 +333,7 @@ img {
 
 @media (588px <=width < 1024px) {
   .page {
-    max-width: 768px;
+    /* max-width: 768px; */
   }
 
   .header {
@@ -385,6 +379,9 @@ img {
     justify-self: end;
   }
 
+  .h2 {
+    inline-size: 315px;
+  }
   .what {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
