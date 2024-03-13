@@ -107,6 +107,7 @@
   border: none;
   text-transform: lowercase;
   inline-size: 70px;
+  padding-block-end: 0px;
   cursor: pointer;
 }
 
@@ -120,32 +121,26 @@
 }
 
 /* *********************    SECTION WHY     ****************** */
-/* section {
-  margin-block-start: 50px;
-} */
 
 .why {
   margin-block-start: 40px;
-  /* outline: 1px dotted white; */
 }
 
 /* *********************    SECTION WHAT     ****************** */
 .what {
+  display: grid;
   margin-block-start: 50px;
-  /* outline: 1px dotted white; */
 }
 
 /* *********************    SECTION HOW    ****************** */
 
 .how {
   margin-block-start: 50px;
-  /* outline: 1px dotted white; */
 }
 
 /* *********************    SECTION IMAGES    ****************** */
 .images {
   margin: 50px 0;
-  /* outline: 1px dotted white; */
 }
 
 .how__images-block {
@@ -163,7 +158,6 @@ img {
   color: var(--header-h2);
   font-size: inherit;
   font-weight: 700;
-  /* width: 330px; */
 }
 
 .h3 {
@@ -231,10 +225,7 @@ img {
     padding: 0 20px;
   }
 
-  .header {
-    /* padding-block-start: 20px; */
-    /* outline: 1px dashed white; */
-  }
+
 
   .header::before {
     inset-block-start: 20px;
@@ -258,8 +249,8 @@ img {
   .why {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: 1fr 1fr;
   }
+
   .why__heading {
     grid-row-start: 1;
     grid-row-end: 3;
@@ -268,11 +259,11 @@ img {
   .how {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    grid-template-rows: repeat(1, 1fr);
+    grid-template-rows: repeat(auto-fit, 1fr);
   }
+
   .how__images-block {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, min-content);
     align-items: stretch;
   }
 
@@ -297,11 +288,10 @@ img {
     object-fit: cover;
   }
 
-
   .street {
     grid-column: 2/4;
   }
-  .why__first .h3 {
+  .why__first {
     margin-block-start: 0;
   }
 
@@ -320,12 +310,10 @@ img {
   .header__text {
     width: 364px;
     justify-self: end;
-  
   }
 
   .header__theme-menu {
     margin-inline-end: 15px;
-   
   }
 
   .h2 {
@@ -336,32 +324,24 @@ img {
 
 @media (1024px <=width) {
   .header__theme-menu-list {
-    
     flex-direction: row;
     gap: 13px;
-
-    /* transition: 1s; */
   }
 
   .header__theme-menu {
     justify-self: center;
     align-self: start;
     margin-block-start: 20px;
-  
   }
 
   .header__text {
     width: 491px;
     justify-self: end;
-  
   }
 
-  .what__grid {
-    display: grid;
+  .what {
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    gap: 20px;
-  
+    column-gap: 20px;
   }
 
   .what__heading {
