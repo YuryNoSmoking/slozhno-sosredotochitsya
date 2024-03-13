@@ -13,7 +13,7 @@
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  /* outline: 1px dotted white; */
+ 
 }
 /* ************************   HEADER   ********************* */
 
@@ -24,7 +24,7 @@
   grid-template-rows: 1fr 0.5fr 1fr;
   block-size: 100vh;
   position: relative;
-  /* outline: 1px dotted white; */
+
 }
 
 .decorated-zone::before {
@@ -144,6 +144,7 @@
 }
 
 .how__images-block {
+  margin-block-start: 10px;
   display: grid;
   gap: 10px;
 }
