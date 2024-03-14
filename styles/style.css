@@ -272,6 +272,7 @@ img {
     display: grid;
     grid-template-columns: 1fr 2fr;
     margin-block-start: 60px;
+    gap: 20px;
   }
 
   .what,
@@ -292,6 +293,7 @@ img {
   .how {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    gap: 20px;
   }
 
   .how__images-block {
