@@ -19,7 +19,8 @@
 .header {
   display: grid;
   align-items: center;
-  /* grid-template-columns: 1fr; */
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 0.5fr 1fr;
   block-size: 100vh;
   min-block-size: 668px;
   position: relative;
@@ -93,7 +94,7 @@
   background-color: var(--accent-color);
   color: var(--header-color);
   font-size: inherit;
- 
+
   font-weight: 700;
 }
 
@@ -266,6 +267,10 @@ img {
   .header__h1 {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     margin-inline-start: -20px;
+  }
+
+  .header__text {
+    margin-block-end: 50px;
   }
 
   .why {
