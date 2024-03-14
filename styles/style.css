@@ -269,10 +269,6 @@ img {
     margin-inline-start: -20px;
   }
 
-  .header__text {
-    margin-block-end: 60px;
-  }
-
   .why {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -354,6 +350,8 @@ img {
   .header__text {
     width: 364px;
     justify-self: end;
+
+    margin-block-end: 70px;
   }
 
   .h2 {
@@ -387,6 +385,7 @@ img {
   .header__text {
     width: 491px;
     justify-self: end;
+    margin-block-end: 50px;
   }
 
   .h2 {
