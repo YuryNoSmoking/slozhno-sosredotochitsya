@@ -386,7 +386,7 @@ img {
   }
 
   .h2 {
-    inline-size: 320px;
+    inline-size: 317px;
   } 
   .what {
     grid-template-columns: repeat(3, 1fr);
