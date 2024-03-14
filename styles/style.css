@@ -351,9 +351,9 @@ img {
     margin-block-end: 70px;
   }
 
-  /* .h2 {
+   .h2 {
     width: 236px;
-  } */
+  } 
 
   .footer {
     block-size: 100vh;
@@ -385,9 +385,9 @@ img {
     margin-block-end: 30px;
   }
 
-  /* .h2 {
-    inline-size: 315px;
-  } */
+  .h2 {
+    inline-size: 320px;
+  } 
   .what {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
