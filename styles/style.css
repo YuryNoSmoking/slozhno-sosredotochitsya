@@ -94,7 +94,7 @@
   background-color: var(--accent-color);
   color: var(--header-color);
   font-size: inherit;
-
+  margin-block-end: 10px;
   font-weight: 700;
 }
 
@@ -272,7 +272,7 @@ img {
     display: grid;
     grid-template-columns: 1fr 2fr;
     margin-block-start: 60px;
-    gap: 20px;
+    column-gap: 20px;
   }
 
   .what,
@@ -339,8 +339,6 @@ img {
 /* ************************   588 - 1023   ********************* */
 
 @media (588px <=width < 1024px) {
-
-
   .header {
     block-size: 100vh;
     min-block-size: 1024px;
