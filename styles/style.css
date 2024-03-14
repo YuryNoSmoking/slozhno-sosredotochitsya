@@ -74,6 +74,7 @@
 .header__theme-menu {
   justify-self: end;
   block-size: 98px;
+  margin-block-start: 5px;
 }
 
 .header__theme-menu-list {
@@ -385,17 +386,17 @@ img {
     margin-block-end: 30px;
   }
 
-  .h2 {
-    inline-size: 317px;
-  } 
+
   .what {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
+    
   }
 
   .what__heading {
     grid-column-start: 1;
     grid-column-end: 4;
+    inline-size: 315px;
   }
 
   .footer {
