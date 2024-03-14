@@ -382,7 +382,7 @@ img {
   .header__text {
     width: 491px;
     justify-self: end;
-    margin-block-end: 50px;
+    margin-block-end: 30px;
   }
 
   .h2 {
