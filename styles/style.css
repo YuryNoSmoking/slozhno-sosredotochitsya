@@ -212,7 +212,6 @@ img {
 }
 
 .footer__heading {
-  font-size: 116px;
   color: var(--header-footer);
   text-shadow: 2px 2px 0 var(--shadow-color);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -338,9 +337,7 @@ img {
 /* ************************   588 - 1023   ********************* */
 
 @media (588px <=width < 1024px) {
-  .page {
-    /* max-width: 768px; */
-  }
+
 
   .header {
     block-size: 100vh;
