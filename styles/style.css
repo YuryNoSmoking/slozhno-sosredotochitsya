@@ -390,7 +390,6 @@ img {
   .what {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
-    
   }
 
   .what__heading {
