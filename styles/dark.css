@@ -9,4 +9,14 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --bkg-color: #000028;
+  --header-color: #000028;
+  --bkg-image: url("/images/cover-image-dark.png");
+  --header-footer: #db00ff;
+  --accent-color: #ff0070;
+  --text-color: #f1b2ce;
+  --shadow-color: #ff0070;
+  --decore-color: #ff0070;
+  --button-color: #ff0070;
+  --header-h2: #ff0070;
 }

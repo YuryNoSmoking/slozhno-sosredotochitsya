@@ -22,6 +22,23 @@
 }
 
 
+@media (prefers-color-scheme: light) {
+  :root {
+    --bkg-color: #fff1f7;
+    --bkg-image: url("/images/cover-image-light.png");
+    --text-color: #353430;
+    --header-footer: #ffc2e6;
+    --accent-color: #ff8dcb;
+    --shadow-color: #ff0070;
+    --decore-color: #353430;
+    --button-color: #353430;
+    --header-color: #353430;
+    --header-h2: #353430;
+        /* Дублируем переменные светлой темы */    
+    }
+}
+
+
 .page.theme_light .header__rec {
   display: none;
 }
