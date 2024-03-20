@@ -345,7 +345,7 @@ img {
     min-block-size: 1024px;
   }
 .header__theme-menu {
-margin-block-start: 50px;
+margin-block-start: 70px;
 
 }
   .header__text {
@@ -388,7 +388,9 @@ margin-block-start: 50px;
     margin-block-end: 30px;
   }
 
-
+.why article {
+  padding-inline-start: 5px;
+}
   .what {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
