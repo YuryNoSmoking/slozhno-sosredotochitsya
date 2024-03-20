@@ -345,13 +345,12 @@ img {
     min-block-size: 1024px;
   }
 .header__theme-menu {
-margin-block-start: 30px;
+margin-block-start: 50px;
 
 }
   .header__text {
     width: 364px;
     justify-self: end;
-
     margin-block-end: 70px;
   }
 
