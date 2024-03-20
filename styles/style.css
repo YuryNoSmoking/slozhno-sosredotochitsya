@@ -344,7 +344,10 @@ img {
     block-size: 100vh;
     min-block-size: 1024px;
   }
+.header__theme-menu {
+margin-block-start: 30px;
 
+}
   .header__text {
     width: 364px;
     justify-self: end;
