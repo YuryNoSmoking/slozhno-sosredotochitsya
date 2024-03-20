@@ -7,6 +7,7 @@
 }
 
 body {
+  margin: 0;
   min-inline-size: 375px;
   max-inline-size: 1440px;
   margin: 0px auto;
