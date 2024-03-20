@@ -28,7 +28,6 @@
   display: none;
 }
 
-
 @media (prefers-color-scheme: light) {
   :root {
     --bkg-color: #fff1f7;
@@ -41,14 +40,12 @@
     --button-color: #353430;
     --header-color: #353430;
     --header-h2: #353430;
-        /* Дублируем переменные светлой темы */    
+    /* Дублируем переменные светлой темы */
+  }
+
+  @media (1024px <= width) {
+    :root {
+      --shadow-color: #ff0070;
     }
-    
-    @media (1024px <= width) {
-      :root {
-        --shadow-color: #ff0070;
-      }
-    }
+  }
 }
-
-
