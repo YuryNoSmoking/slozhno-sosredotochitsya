@@ -215,7 +215,7 @@ img {
 .footer__heading {
   color: var(--header-footer);
   text-shadow: 2px 2px 0 var(--shadow-color);
-  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);;
 }
 
 .footer::before {
