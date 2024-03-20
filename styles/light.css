@@ -24,10 +24,6 @@
   display: none;
 }
 
-.page.theme_auto .header__rec {
-  display: none;
-}
-
 @media (prefers-color-scheme: light) {
   :root {
     --bkg-color: #fff1f7;
@@ -47,5 +43,9 @@
     :root {
       --shadow-color: #ff0070;
     }
+  }
+
+  .page.theme_auto .header__rec {
+    display: none;
   }
 }
