@@ -241,12 +241,7 @@
   }
 
   .images {
-    padding: 60px 20px 0;
-  }
-
-
-  .images {
-    padding-block-end: 60px;
+    padding: 60px 20px 60px;
   }
 
   .why__heading {
