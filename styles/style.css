@@ -134,7 +134,7 @@
 }
 
 .images {
-  padding: 50px 10px 40px;
+  padding: 30px 10px 40px;
 }
 
 .how__images-block {
@@ -236,10 +236,14 @@
   }
 
   .what,
-  .how,
-  .images {
+  .how {
     padding: 80px 20px 0;
   }
+
+  .images {
+    padding: 60px 20px 0;
+  }
+
 
   .images {
     padding-block-end: 60px;
@@ -359,10 +363,6 @@
     justify-self: end;
   }
 
-  .why article {
-    /* padding-inline-start: 5px; */
-  }
-  
   .what {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
