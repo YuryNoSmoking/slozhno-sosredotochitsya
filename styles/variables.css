@@ -5,7 +5,7 @@
 :root {
   --bkg-color: #000028;
   --header-color: #000028;
-  --bkg-image: url("/images/cover-image-dark.png");
+  --bkg-image: url("../images/cover-image-dark.png");
   --header-footer: #db00ff;
   --accent-color: #ff0070;
   --text-color: #f1b2ce;
