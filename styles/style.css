@@ -121,6 +121,7 @@
 
 .why {
   padding: 40px 10px 0;
+  display: grid;
 }
 
 .what {
@@ -210,7 +211,6 @@
 /* 768 and 1024  breakpoints */
 
 @media (588px <= width) {
- 
   .header__rec {
     inset-block-start: 25px;
     inset-inline-end: 50px;
@@ -228,8 +228,6 @@
     margin-inline-start: -20px;
   }
 
-
-
   .what,
   .how {
     padding: 80px 20px 0;
@@ -238,9 +236,6 @@
   .images {
     padding: 60px 20px 60px;
   }
-
-
-
 
   .how__images-block {
     grid-template-columns: repeat(3, 1fr);
@@ -305,21 +300,27 @@
   }
 
   .why {
-    display: grid;
-    grid-template-columns: 236px auto;
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
     padding: 60px 20px 0;
+  }
+  .why article {
+    grid-column: 2/4;
   }
 
   .how {
     display: grid;
-    grid-template-columns: 236px auto;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
+.how article {
+  grid-column: 2/4;
+}
 
-  .h2 {
+
+  /* .h2 {
     width: 236px;
-  }
+  } */
 
   .footer {
     block-size: 100vh;
@@ -360,11 +361,14 @@
 
   .why {
     display: grid;
-    grid-template-columns: 315px auto;
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
     padding: 60px 20px 0;
   }
 
+  .why article {
+    grid-column: 2/4;
+  }
 
   .what {
     grid-template-columns: repeat(3, 1fr);
@@ -373,9 +377,13 @@
 
   .how {
     display: grid;
-    grid-template-columns: 315px auto;
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
+
+.how article {
+  grid-column: 2/4;
+}
 
   .what__heading {
     grid-column-start: 1;
