@@ -24,11 +24,7 @@
   display: none;
 }
 
-@media (1024px <= width) {
-  :root {
-    --shadow-color: #ff0070;
-  }
-}
+
 
 
 @media (prefers-color-scheme: light) {
@@ -44,12 +40,6 @@
     --header-color: #353430;
     --title-color: #353430;
     /* Дублируем переменные светлой темы */
-  }
-
-  @media (1024px <= width) {
-    :root {
-      --shadow-color: #ff0070;
-    }
   }
 
   .page.theme_auto .header__rec {
