@@ -82,7 +82,7 @@
   line-height: 1.3;
 }
 
-.header__h1 {
+.title {
   color: var(--header-footer);
   text-shadow: 4px 4px var(--shadow-color);
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
@@ -144,25 +144,25 @@
 }
 
 /* *********************    DECOR    ****************** */
-.h2 {
+.sub-title {
   color: var(--title-color);
   font-size: inherit;
   font-weight: 700;
 }
 
-.h3 {
+.article-title {
   margin-block-start: 21px;
 }
 
-.h3,
-.h4 {
+.article-title,
+.article-subtitle {
   background-color: var(--accent-color);
   color: var(--header-color);
   font-weight: 700;
   font-size: inherit;
 }
 
-.h4 {
+.article-subtitle {
   font-weight: 400;
   margin-block-start: 20px;
 }
@@ -212,7 +212,7 @@
 
 @media (width > 588px) {
   .header__rec {
-    inset-block-start: 25px;
+    inset-block-start: 23px;
     inset-inline-end: 50px;
   }
 
@@ -223,7 +223,7 @@
     inset-block-end: 20px;
   }
 
-  .header__h1 {
+.title {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     margin-inline-start: -20px;
   }
@@ -272,7 +272,7 @@
     margin-block-start: 0;
   }
 
-  .how__first .h3 {
+  .how__first .article-title {
     margin-block-start: 0;
   }
 }
@@ -282,19 +282,19 @@
 @media (588px <=width < 1024px) {
   .header {
     block-size: 100vh;
-    min-block-size: 1024px;
     padding: 20px;
     grid-template-rows: 45% 10% 45%;
   }
 
   .header__text {
-    width: 364px;
+    max-inline-size: 364px;
     justify-self: end;
   }
 
   .decorated-zone::before {
     inset-inline-end: 20px;
   }
+
   .decorated-zone::after {
     inset-inline-start: 20px;
   }
@@ -304,26 +304,20 @@
     column-gap: 20px;
     padding: 60px 20px 0;
   }
-  /* .why article {
-    grid-column: 2/4;
-  } */
 
   .how {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 20px;
   }
-  /* .how article {
-    grid-column: 2/4;
-  } */
 
-  .h2 {
+  .sub-title {
     max-inline-size: 236px;
   }
 
   .footer {
     block-size: 100vh;
-    min-block-size: 1024px;
+    /* min-block-size: 1024px; */
   }
 
   .footer__heading {
@@ -348,7 +342,7 @@
   }
 
   .header__theme-menu-list {
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
     gap: 10px;
   }
 
@@ -358,7 +352,7 @@
   }
 
   .header__text {
-    width: 491px;
+    max-width: 491px;
     justify-self: end;
   }
 
@@ -391,12 +385,12 @@
   .what__heading {
     grid-column-start: 1;
     grid-column-end: 4;
-    inline-size: 315px;
+    max-inline-size: 315px;
   }
 
   .footer {
     block-size: 100vh;
-    min-block-size: 768px;
+    /* min-block-size: 768px; */
   }
 
   .footer__heading {
