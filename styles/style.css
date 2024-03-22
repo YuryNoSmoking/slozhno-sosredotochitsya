@@ -240,11 +240,7 @@
   }
 
 
-  .how {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 20px;
-  }
+
 
   .how__images-block {
     grid-template-columns: repeat(3, 1fr);
@@ -315,6 +311,12 @@
     padding: 60px 20px 0;
   }
 
+  .how {
+    display: grid;
+    grid-template-columns: 236px auto;
+    gap: 20px;
+  }
+
   .h2 {
     width: 236px;
   }
@@ -363,9 +365,16 @@
     padding: 60px 20px 0;
   }
 
+
   .what {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
+  }
+
+  .how {
+    display: grid;
+    grid-template-columns: 315px auto;
+    gap: 20px;
   }
 
   .what__heading {
