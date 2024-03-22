@@ -210,7 +210,7 @@
 
 /* 768 and 1024  breakpoints */
 
-@media (588px <= width) {
+@media (width > 588px) {
   .header__rec {
     inset-block-start: 25px;
     inset-inline-end: 50px;
@@ -300,22 +300,22 @@
   }
 
   .why {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 2fr;
     column-gap: 20px;
     padding: 60px 20px 0;
   }
-  .why article {
+  /* .why article {
     grid-column: 2/4;
-  }
+  } */
 
   .how {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 2fr;
     gap: 20px;
   }
-  .how article {
+  /* .how article {
     grid-column: 2/4;
-  }
+  } */
 
   .h2 {
     max-inline-size: 236px;
