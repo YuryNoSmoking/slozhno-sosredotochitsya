@@ -29,7 +29,7 @@
 .decorated-zone::before {
   content: "";
   position: absolute;
-  inset-inline-end: 0;
+  inset-inline-end: 10px;
   inset-block-start: 10px;
   display: block;
   inline-size: 25px;
@@ -40,7 +40,7 @@
 
 .decorated-zone::after {
   content: "";
-  inset-inline-start: 0;
+  inset-inline-start: 10px;
   inset-block-end: 10px;
   position: absolute;
   display: block;
@@ -118,39 +118,29 @@
   pointer-events: none;
 }
 
-/* *********************    SECTION WHY     ****************** */
+/* *********************    SECTIONs     ****************** */
 
 .why {
-  margin-block-start: 40px;
+  padding: 40px 10px 0;
 }
 
-/* *********************    SECTION WHAT     ****************** */
 .what {
   display: grid;
-  margin-block-start: 50px;
+  padding: 50px 10px 0;
 }
-
-/* *********************    SECTION HOW    ****************** */
 
 .how {
-  margin-block-start: 50px;
+  padding: 50px 10px 0;
 }
 
-/* *********************    SECTION IMAGES    ****************** */
 .images {
-  margin-block-start: 50px;
-  margin-block-end: 40px;
+  padding: 50px 10px 40px;
 }
 
 .how__images-block {
   margin-block-start: 10px;
   display: grid;
   gap: 10px;
-}
-
-img {
-  display: block;
-  width: 100%;
 }
 
 /* *********************    DECOR    ****************** */
@@ -221,20 +211,15 @@ img {
 /* 768 and 1024  breakpoints */
 
 @media (588px <= width) {
-  .page {
-    /* padding: 0px 20px; */
-  }
-
+ 
   .header__rec {
     inset-block-start: 25px;
   }
 
-  .header::before,
-  .footer::before {
+  .decorated-zone::before {
     inset-block-start: 20px;
   }
-  .header::after,
-  .footer::after {
+  .decorated-zone::after {
     inset-block-end: 20px;
   }
 
@@ -246,18 +231,18 @@ img {
   .why {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    margin-block-start: 60px;
     column-gap: 20px;
+    padding: 60px 20px 0;
   }
 
   .what,
   .how,
   .images {
-    margin-block-start: 80px;
+    padding: 80px 20px 0;
   }
 
   .images {
-    margin-block-end: 60px;
+    padding-block-end: 60px;
   }
 
   .why__heading {
@@ -326,12 +311,12 @@ img {
     justify-self: end;
   }
 
-.decorated-zone::before {
-  inset-inline-end: 20px;
-}
-.decorated-zone::after {
-  inset-inline-start: 20px;
-}
+  .decorated-zone::before {
+    inset-inline-end: 20px;
+  }
+  .decorated-zone::after {
+    inset-inline-start: 20px;
+  }
 
   .h2 {
     width: 236px;
@@ -375,8 +360,9 @@ img {
   }
 
   .why article {
-    padding-inline-start: 5px;
+    /* padding-inline-start: 5px; */
   }
+  
   .what {
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
