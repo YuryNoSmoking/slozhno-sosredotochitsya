@@ -147,6 +147,11 @@
   gap: 20px;
 }
 
+.how {
+  display: grid;
+  gap: 20px;
+}
+
 .images__block {
   margin-block-start: 10px;
   display: grid;
@@ -391,9 +396,9 @@
     grid-column: 2/4;
   }
 
-  .how__article .article-title:first-child {
+  /* .how__article .article-title:first-child {
     margin-block-start: 0;
-  }
+  } */
 
   .what__heading {
     grid-column-start: 1;
