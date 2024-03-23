@@ -218,27 +218,9 @@
 /* ************************   MEDIA   ********************* */
 
 @media (width > 588px) {
-  .header__rec {
-    inset-block-start: 23px;
-    inset-inline-end: 50px;
-  }
 
-  .decorated-zone::before {
-    inset-block-start: 20px;
-  }
-  .decorated-zone::after {
-    inset-block-end: 20px;
-  }
 
-  .title {
-    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    margin-inline-start: -20px;
-  }
 
-  .why__article {
-    display: grid;
-    gap: 20px;
-  }
 
   .why__article .article-title:nth-child(1) {
     margin-block-start: 0;
@@ -285,9 +267,18 @@
 
 @media (588px <=width < 1024px) {
   .header {
-    block-size: 100vh;
     padding: 20px;
     grid-template-rows: 45% 10% 45%;
+  }
+
+  .header__rec {
+    inset-block-start: 23px;
+    inset-inline-end: 50px;
+  }
+
+  .title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    margin-inline-start: -20px;
   }
 
   .header__text {
@@ -296,18 +287,25 @@
   }
 
   .decorated-zone::before {
+    inset-block-start: 20px;
     inset-inline-end: 20px;
   }
 
   .decorated-zone::after {
     inset-inline-start: 20px;
+    inset-block-end: 20px;
   }
 
   .why {
     grid-template-columns: 1fr 2fr;
     column-gap: 20px;
-    /* padding: 60px 20px 0; */
   }
+
+  .why__article {
+    display: grid;
+    gap: 20px;
+  }
+
 
   .how {
     display: grid;
@@ -320,8 +318,7 @@
   }
 
   .footer {
-    block-size: 100vh;
-    /* min-block-size: 1024px; */
+    min-block-size: 1024px;
   }
 
   .footer__heading {
@@ -332,17 +329,23 @@
 
 @media (1024px <=width) {
   .header {
-    block-size: 100vh;
     min-block-size: 768px;
     padding: 20px;
     grid-template-rows: 45% 10% 49%;
   }
 
+  .header__rec {
+    inset-block-start: 23px;
+    inset-inline-end: 50px;
+  }
+
   .decorated-zone::before {
+    inset-block-start: 20px;
     inset-inline-end: 20px;
   }
   .decorated-zone::after {
     inset-inline-start: 20px;
+    inset-block-end: 20px;
   }
 
   .header__theme-menu-list {
@@ -355,6 +358,11 @@
     align-self: start;
   }
 
+  .title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    margin-inline-start: -20px;
+  }
+
   .header__text {
     max-width: 491px;
     justify-self: end;
@@ -364,10 +372,11 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 20px;
-    /* padding 60px 20px 0; */
   }
-
+ 
   .why__article {
+    display: grid;
+    gap: 20px;
     grid-column: 2/4;
   }
 
@@ -393,8 +402,7 @@
   }
 
   .footer {
-    block-size: 100vh;
-    /* min-block-size: 768px; */
+    min-block-size: 768px;
   }
 
   .footer__heading {
