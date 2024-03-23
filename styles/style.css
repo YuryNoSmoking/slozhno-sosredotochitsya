@@ -152,6 +152,11 @@
   gap: 20px;
 }
 
+.how__article {
+  display: grid;
+  gap: 20px;
+}
+
 .images__block {
   margin-block-start: 10px;
   display: grid;
@@ -173,7 +178,7 @@
 
 .article-subtitle {
   font-weight: 400;
-  margin-block-start: 20px;
+  /* margin-block-start: 20px; */
   line-height: 1.3;
 }
 
