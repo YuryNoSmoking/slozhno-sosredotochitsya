@@ -25,9 +25,6 @@
   display: none;
 }
 
-
-
-
 @media (prefers-color-scheme: light) {
   :root {
     --bkg-color: #fff1f7;
