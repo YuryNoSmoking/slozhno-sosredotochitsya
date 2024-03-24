@@ -221,7 +221,9 @@
 }
 
 /* ***************   MEDIA 588 - 1023   *************** */
-@media (588px <=width < 1024px) {
+/* (588px <=width < 1024px) */
+
+@media (width >= 768px) {
   .header {
     padding: 20px;
   }
@@ -302,14 +304,14 @@
 /* ************************   1024   ********************* */
 
 @media (1024px <=width) {
-  .header {
+  /* .header {
     padding: 20px;
-  }
+  } */
 
-  .header__rec {
+  /* .header__rec {
     inset-block-start: 23px;
     inset-inline-end: 50px;
-  }
+  } */
 
   .decorated-zone::before {
     inset-block-start: 20px;
