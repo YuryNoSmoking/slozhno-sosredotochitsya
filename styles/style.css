@@ -80,7 +80,6 @@
   margin-block-start: 0px;
   display: grid;
   gap: 13px;
-  /* line-height: 1.3; */
 }
 
 .title {
@@ -133,7 +132,13 @@
   row-gap: 50px;
 }
 
-.why {
+
+.section-content {
+  display: grid;
+  gap: 20px;
+}
+
+/* .why {
   display: grid;
   gap: 20px;
 }
@@ -156,7 +161,7 @@
 .how__article {
   display: grid;
   gap: 20px;
-}
+} */
 
 .images__block {
   margin-block-start: 10px;
