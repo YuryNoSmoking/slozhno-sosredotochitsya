@@ -137,31 +137,6 @@
   gap: 20px;
 }
 
-/* .why {
-  display: grid;
-  gap: 20px;
-}
-
-.why__article {
-  display: grid;
-  gap: 20px;
-}
-
-.what {
-  display: grid;
-  gap: 20px;
-}
-
-.how {
-  display: grid;
-  gap: 20px;
-}
-
-.how__article {
-  display: grid;
-  gap: 20px;
-} */
-
 .images__block {
   margin-block-start: 10px;
   display: grid;
@@ -321,7 +296,7 @@
   .sub-title {
     min-inline-size: 314px;
   }
-  
+
   .why__article {
     grid-column: 2/4;
   }
