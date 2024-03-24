@@ -132,7 +132,6 @@
   row-gap: 50px;
 }
 
-
 .section-content {
   display: grid;
   gap: 20px;
@@ -175,7 +174,6 @@
   font-size: inherit;
   font-weight: 700;
 }
-
 
 .article-subtitle {
   font-weight: 400;
@@ -320,6 +318,10 @@
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .sub-title {
+    min-inline-size: 314px;
+  }
+  
   .why__article {
     grid-column: 2/4;
   }
