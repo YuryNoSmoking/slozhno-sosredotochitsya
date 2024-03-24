@@ -303,7 +303,8 @@
 }
 /* ************************   1024   ********************* */
 
-@media (1024px <=width) {
+@media (width >= 1024px) {
+  
   /* .header {
     padding: 20px;
   } */
@@ -313,14 +314,14 @@
     inset-inline-end: 50px;
   } */
 
-  .decorated-zone::before {
+  /* .decorated-zone::before {
     inset-block-start: 20px;
     inset-inline-end: 20px;
   }
   .decorated-zone::after {
     inset-inline-start: 20px;
     inset-block-end: 20px;
-  }
+  } */
 
   .header__theme-menu-list {
     display: flex;
@@ -342,10 +343,10 @@
     justify-self: end;
   }
 
-  .main {
+  /* .main {
     row-gap: 80px;
     padding: 60px 20px;
-  }
+  } */
 
   .why {
     display: grid;
